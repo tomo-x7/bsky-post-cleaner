@@ -1,8 +1,10 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "bsky-post-cleaner",
-  "compatibility_date": "2026-01-05",
-  "main": "dist/worker.js",
-  "account_id": "",
-  "usage_model": "bundled"
+	"$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+	"name": "bsky-post-cleaner",
+	"compatibility_date": "2026-01-05",
+	"assets": {
+		"directory": "dist",
+		"html_handling": "force-trailing-slash",
+		"not_found_handling": "single-page-application"
+	}
 }

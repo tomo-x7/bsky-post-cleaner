@@ -1,0 +1,12 @@
+{
+	"$schema": "https://raw.githubusercontent.com/tomo-x7/skytools/refs/heads/main/public/oauth-client-metadata-schema.json",
+	"application_type": "web",
+	"client_id": "https://bsky-post-cleaner.tomo-x.win/client-metadata.json",
+	"client_uri": "https://bsky-post-cleaner.tomo-x.win/",
+	"client_name": "bsky-post-cleaner",
+	"redirect_uris": ["https://bsky-post-cleaner.tomo-x.win/"],
+	"scope": "",
+	"grant_types": ["authorization_code", "refresh_token"],
+	"response_types": ["code"],
+	"dpop_bound_access_tokens": true
+}
