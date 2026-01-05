@@ -169,7 +169,7 @@ function Main({
 				collection: "app.bsky.feed.post",
 				rkey,
 				record: {
-					text: "bsky-post-cleanerにより削除中",
+					text: `bsky-post-cleanerにより削除中\n削除日時:${new Date().toString()}`,
 					via: "bsky-post-cleaner",
 					createdAt: new Date(Date.now() - 86400000).toISOString(),
 				},
