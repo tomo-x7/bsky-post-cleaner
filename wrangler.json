@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "bsky-post-cleaner",
+  "compatibility_date": "2026-01-05",
+  "main": "dist/worker.js",
+  "account_id": "",
+  "usage_model": "bundled"
+}
