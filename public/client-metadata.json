@@ -5,7 +5,7 @@
 	"client_uri": "https://bsky-post-cleaner.tomo-x.win/",
 	"client_name": "bsky-post-cleaner",
 	"redirect_uris": ["https://bsky-post-cleaner.tomo-x.win/"],
-	"scope": "atproto repo:app.bsky.feed.post?action=create&action=delete",
+	"scope": "atproto repo:app.bsky.feed.post",
 	"grant_types": ["authorization_code", "refresh_token"],
 	"response_types": ["code"],
 	"dpop_bound_access_tokens": true,
