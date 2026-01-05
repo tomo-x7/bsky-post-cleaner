@@ -61,12 +61,12 @@ export function App({
 }) {
 	const [changeUsr, setChangeUsr] = useState(false);
 	if (agent == null || changeUsr) {
-		return <Signin client={client} />;
+		return <Signin client={client} onBack={changeUsr ? () => setChangeUsr(false) : undefined} />;
 	}
 	return <Main agent={agent} handle={handle} onChangeUser={() => setChangeUsr(true)} />;
 }
 
-function Signin({ client }: { client: BrowserOAuthClient }) {
+function Signin({ client, onBack }: { client: BrowserOAuthClient; onBack?: () => void }) {
 	const [handle, setHandle] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 
@@ -88,7 +88,18 @@ function Signin({ client }: { client: BrowserOAuthClient }) {
 	return (
 		<div className="space-y-3 sm:space-y-4">
 			<div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4">
-				<h2 className="text-sm sm:text-base font-semibold text-gray-800 mb-2 sm:mb-3">ログイン</h2>
+				<div className="flex items-center justify-between mb-2 sm:mb-3">
+					<h2 className="text-sm sm:text-base font-semibold text-gray-800">ログイン</h2>
+					{onBack && (
+						<button
+							type="button"
+							onClick={onBack}
+							className="text-[11px] sm:text-xs text-gray-500 hover:text-gray-700 transition-colors"
+						>
+							キャンセル
+						</button>
+					)}
+				</div>
 				<label className="block mb-2 sm:mb-3">
 					<span className="text-[11px] sm:text-xs text-gray-500">Blueskyハンドル</span>
 					<input
