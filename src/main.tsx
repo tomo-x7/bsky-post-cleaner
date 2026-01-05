@@ -3,11 +3,10 @@ import { BrowserOAuthClient, type ClientMetadata } from "@atproto/oauth-client-b
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Toaster } from "react-hot-toast";
-import clientMetadata from "../public/client-metadata.json";
 import { App, Layout } from "./App.tsx";
 import "./index.css";
 
-const client = new BrowserOAuthClient({ clientMetadata: clientMetadata as unknown as ClientMetadata });
+const client = await BrowserOAuthClient.load({clientId:"https://bsky-post-cleaner.tomo-x.win/client-metadata.json",handleResolver:"https://public.api.bsky.app/"})
 const res = await client.init().catch((e) => {
 	console.error(e);
 	window.alert("初期化に失敗しました");

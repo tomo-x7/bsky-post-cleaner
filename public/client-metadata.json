@@ -10,5 +10,5 @@
 	"response_types": ["code"],
 	"dpop_bound_access_tokens": true,
 	"tos_uri": "https://github.com/tomo-x7/bsky-post-cleaner#%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84",
-	"policy_uri": "https://github.com/tomo-x7/bsky-post-cleaner#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC"
+	"policy_uri": "https://github.com/tomo-x7/bsky-post-cleaner#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC","token_endpoint_auth_method": "none"
 }
