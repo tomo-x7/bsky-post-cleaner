@@ -9,5 +9,5 @@
 	},
 	"workers_dev": false,
 	"preview_urls": true,
-	"route": { "custom_domain": true, "pattern": "https://bsky-post-cleaner.tomo-x.win/" }
+	"route": { "custom_domain": true, "pattern": "bsky-post-cleaner.tomo-x.win" }
 }
